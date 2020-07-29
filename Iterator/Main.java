@@ -18,6 +18,7 @@ public class Main {
         // 往集合中添加元素
         coll.add("Tom"); coll.add("Jerry"); coll.add("Miffy");
         // 获取迭代器 使用多态 前面是接口，后面是实现类对象
+        // 返回指向集合-1的索引位置（索引从0开始）
         Iterator<String> it = coll.iterator();
 
         // noLoop(it);
@@ -28,6 +29,7 @@ public class Main {
 
     private static void useLoop(Iterator<String> it) {
         while (it.hasNext()) {
+            // next方法取出元素，同时使指针向后移动一位
             System.out.println(it.next());
         }
     }
@@ -39,6 +41,7 @@ public class Main {
         // 取出元素
         // 取到最后一个元素 的 后一个元素 进行判断为false，此时再进行next（取出）动作抛出异常
         // true Tom
+        // next方法取出元素，同时使指针向后移动一位
         String s = it.next();
         System.out.println(s);
 
