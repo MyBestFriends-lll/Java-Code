@@ -5,13 +5,13 @@ import java.util.*;
 /*
 斗地主简单实现
  */
-public class Main {
+public class Landlords01 {
     public static void main(String[] args) {
         // 准备牌
         ArrayList<String> poker = new ArrayList<>();
         // String[] colors = {"\uF346", "\uF3A4", "\uF33C", "\uF325"};
         String[] colors = {"黑桃", "梅花", "红桃", "方块"};
-        String[] numbers = {"2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3",};
+        String[] numbers = {"2", "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3"};
         poker.add("\uF578"); // 大王
         poker.add("\uF58D"); // 小王
         // poker.add("大王");
